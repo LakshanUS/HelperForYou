@@ -1,0 +1,1155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Common CSS Starts*/
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    flex: 0.1;
+}
+
+.bottom {
+    flex: 1;
+    background-image: url(../images/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Common CSS Ends*/
+
+/* Extra */
+/* Page Transition CSS */
+
+:root {
+    --secondary-color: #FFFFFF;
+    --contrast-image: url(../images/background.jpg);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: -10;
+    background-color: var(--contrast-image);
+}
+
+.container {
+    opacity: 0.85;
+    display: flex;
+    height: 75vh;
+    width: 85vh;
+    /* justify-content: space-around; */
+    justify-content: left;
+    align-items: center;
+    color: #000000;
+    animation: slideIn .9s ease forwards;
+    background-color: var(--secondary-color);
+    border-radius: 7%;
+    position: relative;
+    transition: all .9s ease;
+}
+
+.container_content {
+    width: 50%;
+}
+
+.container_content_inner {
+    width: 100%;
+    margin-left: 55px;
+}
+
+.container2 {
+    margin-top: 9%;
+    opacity: 0.85;
+    display: flex;
+    height: 42vh;
+    width: 85vh;
+    /* justify-content: space-around; */
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    animation: expand .9s ease forwards;
+    background-color: var(--secondary-color);
+    border-radius: 40px 40px 40px 40px;
+    position: relative;
+    transition: all .9s ease;
+}
+
+.container_content2 {
+    width: 90%;
+    text-align: center;
+}
+
+.container_content_inner2 {
+    width: 100%;
+    /* margin-left: 15px; */
+}
+
+.container2mod {
+    margin-top: 5%;
+    height: 60vh;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(0px) scale(.2);
+    }
+
+    100% {
+        transform: translateX(0px) scale(1);
+    }
+}
+
+@keyframes slideInSU {
+    0% {
+        transform: translateX(-200px) scale(.4);
+    }
+
+    100% {
+        transform: translateX(0px) scale(1);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(300px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes expand {
+    0% {
+        transform: translateX(-500px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+/* Page Transition CSS */
+
+
+
+
+
+/* Navigation Bar CSS Starts*/
+
+.navbar {
+    background-color: #ffffff;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.logo {
+    width: 200px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link {
+    display: flex;
+    margin-right: 40px;
+}
+
+.nav-item {
+    margin: 10px;
+    margin-right: 30px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.item5 {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #004AAD;
+    height: 40px;
+    width: 120px;
+    border-radius: 25px;
+    transition: .4s;
+    color: #ffffff;
+}
+
+.normal-link a:hover {
+    transition: .4s;
+    color: #004AAD;
+}
+
+.item5:hover {
+    background-color: #004AAD;
+}
+
+.divider {
+    width: 25px;
+}
+
+.normal-link {
+    display: flex;
+    margin-right: 0px;
+}
+
+.active-link {
+    color: #004AAD;
+}
+
+.active-btn {
+    background-color: #004AAD;
+}
+
+/* Navigation Bar CSS Starts*/
+
+
+
+
+
+/* index.php CSS Starts */
+
+.index-container {
+    margin-top: 17%;
+    margin-left: 10%;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    animation: slideIn .9s ease forwards;
+    position: relative;
+    transition: all .9s ease;
+}
+
+.heading-tag {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 100%;
+    /* identical to box height, or 96px */
+    color: #004AAD;
+}
+
+.sub {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 25px;
+    color: #000000;
+}
+
+/* index.php CSS Ends */
+
+
+
+
+
+/* services.php CSS Starts */
+
+.container01 {
+    border: 5px solid #F9F9F9;
+    box-shadow: 5px 10px 20px #666;
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 9%;
+    /* margin-bottom: 10%; */
+    width: 20%;
+    height: 75%;
+    padding: 20px;
+    opacity: 0.85;
+    background-color: #fff;
+    border-radius: 25px;
+    text-align: center;
+    animation: slideIn .9s ease forwards;
+    position: relative;
+    transition: all .9s ease;
+}
+
+.container02 {
+    border: 5px solid #F9F9F9;
+    box-shadow: 5px 10px 20px #666;
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 10%;
+    /* margin-bottom: 10%; */
+    width: 20%;
+    height: 75%;
+    padding: 20px;
+    opacity: 0.85;
+    background-color: #fff;
+    border-radius: 25px;
+    text-align: center;
+    animation: slideIn .9s ease forwards;
+    position: relative;
+    transition: all .9s ease;
+}
+
+.container03 {
+    border: 5px solid #F9F9F9;
+    box-shadow: 5px 10px 20px #666;
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 10%;
+    /* margin-bottom: 10%; */
+    width: 20%;
+    height: 75%;
+    padding: 20px;
+    opacity: 0.85;
+    background-color: #fff;
+    border-radius: 25px;
+    text-align: center;
+    animation: slideIn .9s ease forwards;
+    position: relative;
+    transition: all .9s ease;
+}
+
+.caption {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.iconlogo {
+    margin-bottom: 30px;
+    font-size: 70px;
+    color: #004AAD;
+}
+
+.abt-txt {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.abt-link {
+    font-size: 15px;
+    font-weight: 700;
+    color: #004AAD;
+}
+
+.abt-link:hover {
+    color: #052934;
+}
+
+/* services.php CSS Ends */
+
+
+
+
+
+/* about.php CSS Starts */
+
+.about-container {
+    /* flex: 0 1 650px; */
+    width: 650px;
+    margin-top: 100px;
+    margin-left: 150px;
+    padding: 20px;
+    opacity: 0.9;
+    background-color: #fff;
+    border-radius: 25px;
+    animation: slideIn .9s ease forwards;
+    position: relative;
+    transition: all .9s ease;
+}
+
+.leftquote {
+    /* margin-top: 100px; */
+    /* margin-left: 70px; */
+    font-size: 45px;
+    color: #004AAD;
+}
+
+.rightquote {
+    margin-top: 5px;
+    margin-left: 510px;
+    font-size: 45px;
+    color: #004AAD;
+}
+
+.heading {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    font-style: italic;
+    line-height: 100%;
+    /* identical to box height, or 96px */
+    color: #004AAD;
+}
+
+.contenttxt {
+    text-align: justify;
+    width: 500px;
+    margin-left: 50px;
+    font-weight: 300;
+    font-size: 15px;
+    font-style: italic;
+    color: #000000;
+}
+
+
+/* about.php CSS Ends */
+
+
+
+
+
+/* contactus.php CSS Starts */
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.background {
+    display: flex;
+    min-height: 70vh;
+}
+
+.contact-container {
+    flex: 0 1 60%;
+    margin-left: 5%;
+    margin-top: 70px;
+    padding: 10px;
+    opacity: 0.9;
+    animation: slideIn .9s ease forwards;
+    position: relative;
+    transition: all .9s ease;
+}
+
+.screen {
+    position: relative;
+    background: #ffffff;
+    border-radius: 15px;
+    /* opacity: inherit; */
+}
+
+.screen:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+    z-index: -1;
+}
+
+.screen-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #004AAD;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.screen-header-left {
+    margin-right: auto;
+}
+
+.screen-header-button {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 3px;
+    border-radius: 8px;
+    background: white;
+}
+
+.screen-header-button.close {
+    background: #ed1c6f;
+}
+
+.screen-header-button.maximize {
+    background: #e8e925;
+}
+
+.screen-header-button.minimize {
+    background: #74c54f;
+}
+
+.screen-header-right {
+    display: flex;
+}
+
+.screen-header-ellipsis {
+    width: 3px;
+    height: 3px;
+    margin-left: 2px;
+    border-radius: 8px;
+    background: #999;
+}
+
+.screen-body {
+    display: flex;
+}
+
+.screen-body-item {
+    flex: 1;
+    padding: 50px;
+}
+
+.screen-body-item.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #004AAD;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.app-title:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 25px;
+    height: 4px;
+    background: #004AAD;
+}
+
+.app-content {
+    margin-top: 25px;
+    font-size: 9px;
+    font-weight: 700;
+    color: #004AAD;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.iconstyle {
+    font-size: 30px;
+    color: #004AAD;
+}
+
+.app-gmail {
+    margin-top: 120px;
+    font-size: 11px;
+    color: #004AAD;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.app-gmail a {
+    margin-top: 120px;
+    font-size: 11px;
+    color: #004AAD;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.app-contact {
+    margin-top: auto;
+    font-size: 11px;
+    color: #004AAD;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.app-form-group {
+    margin-left: -100px;
+    margin-bottom: 15px;
+}
+
+.app-form-group.message {
+    margin-left: -100px;
+    margin-top: 30px;
+}
+
+.app-form-group.buttons {
+    margin-left: -100px;
+    margin-bottom: 0;
+    text-align: right;
+}
+
+.app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #004AAD;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    font-size: 14px;
+    /* text-transform: uppercase; */
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.app-form-control::placeholder {
+    color: #666;
+}
+
+.app-form-control:focus {
+    border-bottom-color: #ddd;
+}
+
+.msg-textarea {
+    overflow: hidden;
+    resize: none;
+}
+
+.app-permission {
+    margin-left: -50px;
+    margin-top: auto;
+    font-size: 9px;
+    color: #888;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.checkbox {
+    width: 8px;
+    height: 8px;
+}
+
+.app-form-button {
+    background: none;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    color: #2b61a7;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+}
+
+.app-form-button:hover {
+    color: #004AAD;
+}
+
+.credits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: #004AAD;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.credits-link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.dribbble {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+
+@media screen and (max-width: 520px) {
+    .screen-body {
+        flex-direction: column;
+    }
+
+    .screen-body-item.left {
+        margin-bottom: 30px;
+    }
+
+    .app-title {
+        flex-direction: row;
+    }
+
+    .app-title span {
+        margin-right: 12px;
+    }
+
+    .app-title:after {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .screen-body {
+        padding: 40px;
+    }
+
+    .screen-body-item {
+        padding: 0;
+    }
+}
+
+/* contactus.php CSS Ends */
+
+
+
+
+
+/* signin.php CSS Starts */
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    margin-left: 120px;
+}
+
+.form-signin-heading {
+    color: #004AAD;
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+.form-signin-username {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.form-signin-password {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0px;
+    margin-top: 15px;
+}
+
+.btn-signin {
+    background: #004AAD;
+    border: none;
+    border-radius: 15px;
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #ffffff;
+    margin-left: 350px;
+    transition: all 0.5s;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.btn-signin span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn-signin span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn-signin:hover span {
+    padding-right: 15px;
+}
+
+.btn-signin:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.forgot-password {
+    font-size: 15px;
+    color: #004AAD;
+    font-weight: bold;
+    transition: .4s;
+    margin-top: 10px;
+}
+
+.forgot-password:hover {
+    color: #004AAD;
+}
+
+.form-control {
+    /* width: 25%; */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    height: 100%;
+    position: relative;
+    width: 250px;
+    overflow: hidden;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #ccc;
+}
+
+.donothave-account {
+    color: #004AAD;
+    font-weight: bold;
+}
+
+.donothave-account:hover {
+    color: #004AAD;
+    transition: .4s;
+}
+
+/* signin.php CSS Ends */
+
+
+
+
+
+/* pwd-forgetpassword.php CSS Starts */
+
+.fgtpwd-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    margin-left: 120px;
+}
+
+.fgtpwd-heading {
+    color: #004AAD;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.fgtpwd-txt {
+    color: #000000;
+    font-size: 15px;
+}
+
+.fgtpwd-input {
+    margin-top: 10px;
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 1px 2px 2px 1px #004AAD;
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    color: #303030;
+    outline: none;
+}
+
+.fgtpwd-input::placeholder {
+    text-align: center;
+    font-size: 13px;
+}
+
+.btn_continue {
+    /* margin-top: 30px; */
+    background-color: #004AAD;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.forgot-err-msg {
+    color: red;
+    font-size: 13px;
+    margin-bottom: 0px;
+
+}
+
+.forgot-continue {
+    margin-top: 10px;
+}
+
+/* pwd-forgetpassword.php CSS Ends */
+
+
+
+
+/* pwd-verifyotp.php CSS Starts */
+
+.otp-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.otp-input {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.otp-input:focus {
+    outline: none;
+    border-color: #004AAD;
+}
+
+.opt-btn {
+    margin-top: 20px;
+}
+
+.message-sent {
+    font-size: 15px;
+    color: green;
+    font-weight: 500;
+}
+
+/* pwd-verifyotp.php CSS Ends */
+
+
+
+
+
+/* pwd-resetpassword.php CSS Starts */
+
+.fgtpwd-pwd {
+    margin-top: 10px;
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 1px 2px 2px 1px #004AAD;
+    padding: 10px;
+    outline: none;
+    text-align: center;
+}
+
+.fgtpwd-pwd::placeholder {
+    text-align: center;
+    font-size: 12px;
+}
+
+.reset-btn {
+    margin-top: 4px;
+}
+
+/* pwd-resetpassword.php CSS Ends */
+
+
+
+
+
+/* signup.php CSS Starts */
+
+.contOuter{
+    margin-top: 4%;
+    margin-left: 5%;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    padding: 30px;
+    animation: slideIn .9s ease forwards;
+    position: relative;
+    transition: all .9s ease;
+}
+
+.txtSel{
+    text-align: justify;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.right{
+    margin-top: -150px;
+    margin-left: 40%;
+    text-align: right;
+    width: 50%;
+}
+
+.left{
+    text-align: left;
+    width: 50%;
+}
+
+.typeSel{
+    background-color: #ffffff;
+    border: 2px solid #004AAD;
+    border-radius: 50px;
+    color: #004AAD;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.typeSel span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.typeSel span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.typeSel:hover span {
+    padding-right: 15px;
+}
+
+.typeSel:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* signup.php CSS Ends */
+
+
+
+
+
+/* signup_client.php CSS Starts */
+
+
+.signup-trans {
+    animation: slideInSU .9s ease forwards;
+    position: relative;
+    transition: all .9s ease;
+}
+
+.error {
+    font-size: 10px;
+    font-weight: 600;
+    color: red;
+}
+
+.wrapper-signup {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 70vh;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    margin-left: 70px;
+    overflow: auto;
+}
+
+.wrapper-signup label {
+    margin: 0px;
+    font-size: 18px;
+}
+
+.signup-heading {
+    margin: 30px 0px 0px 150px;
+}
+
+.signup-heading01 {
+    color: #004AAD;
+    font-size: 35px;
+    margin-top: 5px;
+    margin-left: -38px;
+}
+
+.signup-heading02 {
+    font-size: 18px;
+    color: #004AAD;
+    margin-top: -30px;
+    margin-left: -38px;
+    margin-bottom: -10px;
+}
+
+.signup-row {
+    display: flex;
+    margin: 0px 10px 15px 0px;
+    margin-left: 40px;
+    margin-bottom: 5px;
+}
+
+.row-item {
+    width: 500px;
+
+}
+
+.signup-address {
+    margin-bottom: -100px;
+    width: 730px;
+    height: 200px;
+}
+
+.textarea {
+    outline: 0;
+    resize: none;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    border-width: 0 0 2px;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    width: 730px;
+    height: 80px;
+}
+
+.signup-row input {
+    border-radius: 7px;
+    width: 300px;
+    /* background-color: #ffffff; */
+    padding: 0.4rem 0.6rem;
+    border: 1px solid #ccc;
+    outline: 0;
+    border-width: 0 0 2px;
+    /* border-color: #004AAD; */
+}
+
+.wrapper-signup select {
+    display: block;
+    border-radius: 5px;
+    width: 350px;
+    /* background-color: #ffffff; */
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #ccc;
+    outline: 0;
+    border-width: 0 0 2px;
+    /* border-color: #004AAD; */
+}
+
+.btn-signup {
+    margin-top: -170px;
+    margin-left: 270px;
+}
+
+label {
+    font-size: 15px;
+}
+
+/* signup_client.php CSS Ends */
